@@ -32,7 +32,7 @@ extension NewContactCell: UIImagePickerControllerDelegate, UINavigationControlle
         imageNewContact.image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         imageNewContact.contentMode = .scaleAspectFill
         imageNewContact.clipsToBounds = true
-        photo = imageNewContact.image!
+        Contact.shared.photo = imageNewContact.image!
        
         UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
     }

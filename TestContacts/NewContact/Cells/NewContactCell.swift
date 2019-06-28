@@ -8,13 +8,15 @@
 
 import UIKit
 
+
 class  NewContactCell: UITableViewCell {
-    static let newReuseId = "NewContactCell"
+ 
     @IBOutlet weak var imageNewContact: UIImageView!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var secondNameTextField: UITextField!
     @IBOutlet weak var addImageButton: UIButton!
 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         customNewImageAndButton()
@@ -23,7 +25,10 @@ class  NewContactCell: UITableViewCell {
         secondNameTextField.delegate = self
         
     }
+    
+    
     private func customNewImageAndButton(){
+        
         imageNewContact.layer.cornerRadius = 35
         imageNewContact.layer.borderColor = UIColor.black.cgColor
         imageNewContact.layer.borderWidth = 0.2
@@ -36,7 +41,10 @@ class  NewContactCell: UITableViewCell {
         
         
     }
+    
+    
     private func customTextField(){
+        
         firstNameTextField.placeholder = "First name"
         secondNameTextField.placeholder = "Second name"
         
@@ -49,6 +57,13 @@ class  NewContactCell: UITableViewCell {
         secondNameTextField.clearButtonMode = .whileEditing
         
         
+    }
+    
+    func loadNewContactCell(indexPath: IndexPath){
+        
+        firstNameTextField.text = ""
+        secondNameTextField.text = ""
+    
     }
     
     

@@ -33,9 +33,10 @@
 		77CCC8D822C01B6300F4E1F8 /* DatePickerInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8D722C01B6300F4E1F8 /* DatePickerInTextField.swift */; };
 		77CCC8DA22C020DD00F4E1F8 /* ContactObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8D922C020DD00F4E1F8 /* ContactObject.swift */; };
 		77CCC8E022C38CD800F4E1F8 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8DF22C38CD800F4E1F8 /* TextFieldExtension.swift */; };
-		77CCC8E222C39CE600F4E1F8 /* SaveNewContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8E122C39CE600F4E1F8 /* SaveNewContact.swift */; };
-		77CCC8EA22C5964900F4E1F8 /* CheckDataVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8E922C5964900F4E1F8 /* CheckDataVariables.swift */; };
-		77CCC8F022C5DA3700F4E1F8 /* CleanValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8EF22C5DA3700F4E1F8 /* CleanValue.swift */; };
+		77CCC8F422C66BA200F4E1F8 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8F322C66BA200F4E1F8 /* NameCell.swift */; };
+		77CCC8F622C6725C00F4E1F8 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8F522C6725C00F4E1F8 /* Info.swift */; };
+		77CCC8F822C6751100F4E1F8 /* Numbering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8F722C6751100F4E1F8 /* Numbering.swift */; };
+		77CCC8FC22C6865B00F4E1F8 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CCC8FB22C6865B00F4E1F8 /* Contact.swift */; };
 		D4EB1558E642CCA0C2336043 /* Pods_TestContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCE76359359A69FE2FF6E8A /* Pods_TestContacts.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,9 +71,10 @@
 		77CCC8D722C01B6300F4E1F8 /* DatePickerInTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerInTextField.swift; sourceTree = "<group>"; };
 		77CCC8D922C020DD00F4E1F8 /* ContactObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactObject.swift; sourceTree = "<group>"; };
 		77CCC8DF22C38CD800F4E1F8 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
-		77CCC8E122C39CE600F4E1F8 /* SaveNewContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNewContact.swift; sourceTree = "<group>"; };
-		77CCC8E922C5964900F4E1F8 /* CheckDataVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDataVariables.swift; sourceTree = "<group>"; };
-		77CCC8EF22C5DA3700F4E1F8 /* CleanValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanValue.swift; sourceTree = "<group>"; };
+		77CCC8F322C66BA200F4E1F8 /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		77CCC8F522C6725C00F4E1F8 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		77CCC8F722C6751100F4E1F8 /* Numbering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbering.swift; sourceTree = "<group>"; };
+		77CCC8FB22C6865B00F4E1F8 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		DBCE76359359A69FE2FF6E8A /* Pods_TestContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				77CCC89322BD041F00F4E1F8 /* AppDelegate.swift */,
+				77CCC8F222C66A7000F4E1F8 /* Model */,
 				77CCC8C422BE172100F4E1F8 /* Infomation */,
 				77CCC8B122BD1AC000F4E1F8 /* NewContact */,
 				77CCC8A522BD05F700F4E1F8 /* Contacts */,
@@ -155,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				77CCC8B422BD1C3600F4E1F8 /* Cells */,
-				77CCC8E622C3AB4700F4E1F8 /* SaveNewContact */,
 				77CCC8AD22BD1A9E00F4E1F8 /* NewContactViewController.swift */,
 				77CCC8B222BD1B1400F4E1F8 /* NewContactTableViewExt.swift */,
 				77CCC8AF22BD1AB400F4E1F8 /* NewContactViewController.storyboard */,
@@ -183,7 +185,6 @@
 				77CCC8C822BE18DA00F4E1F8 /* Cells */,
 				77CCC8C022BE16FA00F4E1F8 /* InfoContactViewController.swift */,
 				77CCC8C622BE188600F4E1F8 /* InfoContactExtension.swift */,
-				77CCC8EE22C5CB3100F4E1F8 /* CheckValue */,
 				77CCC8C222BE170300F4E1F8 /* InfoContactViewController.storyboard */,
 			);
 			path = Infomation;
@@ -216,29 +217,23 @@
 			path = DatePicker;
 			sourceTree = "<group>";
 		};
-		77CCC8E622C3AB4700F4E1F8 /* SaveNewContact */ = {
-			isa = PBXGroup;
-			children = (
-				77CCC8E122C39CE600F4E1F8 /* SaveNewContact.swift */,
-			);
-			path = SaveNewContact;
-			sourceTree = "<group>";
-		};
 		77CCC8ED22C5CAB700F4E1F8 /* TextFieldExtension */ = {
 			isa = PBXGroup;
 			children = (
 				77CCC8DF22C38CD800F4E1F8 /* TextFieldExtension.swift */,
-				77CCC8EF22C5DA3700F4E1F8 /* CleanValue.swift */,
 			);
 			path = TextFieldExtension;
 			sourceTree = "<group>";
 		};
-		77CCC8EE22C5CB3100F4E1F8 /* CheckValue */ = {
+		77CCC8F222C66A7000F4E1F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				77CCC8E922C5964900F4E1F8 /* CheckDataVariables.swift */,
+				77CCC8F322C66BA200F4E1F8 /* NameCell.swift */,
+				77CCC8F722C6751100F4E1F8 /* Numbering.swift */,
+				77CCC8F522C6725C00F4E1F8 /* Info.swift */,
+				77CCC8FB22C6865B00F4E1F8 /* Contact.swift */,
 			);
-			path = CheckValue;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B417AAD8C6A82D59FDFF11D4 /* Frameworks */ = {
@@ -381,21 +376,22 @@
 				77CCC8CE22BE20E200F4E1F8 /* InfoContactRepeatingCell.swift in Sources */,
 				77CCC8C722BE188600F4E1F8 /* InfoContactExtension.swift in Sources */,
 				77CCC89622BD041F00F4E1F8 /* ContactsViewController.swift in Sources */,
-				77CCC8E222C39CE600F4E1F8 /* SaveNewContact.swift in Sources */,
+				77CCC8FC22C6865B00F4E1F8 /* Contact.swift in Sources */,
 				77CCC8AE22BD1A9E00F4E1F8 /* NewContactViewController.swift in Sources */,
 				77CCC8D822C01B6300F4E1F8 /* DatePickerInTextField.swift in Sources */,
+				77CCC8F622C6725C00F4E1F8 /* Info.swift in Sources */,
 				77CCC89422BD041F00F4E1F8 /* AppDelegate.swift in Sources */,
 				77CCC8D622BFE5DE00F4E1F8 /* GalaryAddImage.swift in Sources */,
-				77CCC8EA22C5964900F4E1F8 /* CheckDataVariables.swift in Sources */,
-				77CCC8F022C5DA3700F4E1F8 /* CleanValue.swift in Sources */,
 				77CCC8B322BD1B1400F4E1F8 /* NewContactTableViewExt.swift in Sources */,
 				77CCC8DA22C020DD00F4E1F8 /* ContactObject.swift in Sources */,
 				77CCC8E022C38CD800F4E1F8 /* TextFieldExtension.swift in Sources */,
 				77CCC8CA22BE18FB00F4E1F8 /* InfoContactCell.swift in Sources */,
+				77CCC8F822C6751100F4E1F8 /* Numbering.swift in Sources */,
 				77CCC8AC22BD0EAD00F4E1F8 /* ContactsExtension.swift in Sources */,
 				77CCC8BC22BE08AA00F4E1F8 /* NewContactRepeatingCell.swift in Sources */,
 				77CCC8C122BE16FA00F4E1F8 /* InfoContactViewController.swift in Sources */,
 				77CCC8B622BD1C4A00F4E1F8 /* NewContactCell.swift in Sources */,
+				77CCC8F422C66BA200F4E1F8 /* NameCell.swift in Sources */,
 				77CCC8A822BD091C00F4E1F8 /* ContactsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

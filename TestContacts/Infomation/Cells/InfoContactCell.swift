@@ -9,7 +9,7 @@
 import UIKit
 
 class InfoContactCell: UITableViewCell {
-    static let infoID = "InfoContactCell"
+
     @IBOutlet weak var infoImage: UIImageView!
     @IBOutlet weak var firstNameInfoLabel: UILabel!
     @IBOutlet weak var secondNameInfoLabel: UILabel!
@@ -22,5 +22,17 @@ class InfoContactCell: UITableViewCell {
         infoImage.layer.borderColor = UIColor.black.cgColor
         infoImage.layer.borderWidth = 0.2
         infoImage.clipsToBounds = true
+    }
+    
+    
+    func loadCell(indexPath: IndexPath){
+        
+        firstNameInfoLabel.text = Info.shared.nameInfo
+        secondNameInfoLabel.text = Info.shared.secondNameInfo
+        
+        let photoContact = UIImage(data: Info.shared.imageInfo as Data)
+        infoImage.image = photoContact
+        infoImage.clipsToBounds = true
+        infoImage.contentMode = .scaleAspectFill
     }
 }

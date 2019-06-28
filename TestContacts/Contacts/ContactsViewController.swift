@@ -8,19 +8,18 @@
 
 import UIKit
 import RealmSwift
-class ContactsViewController: UIViewController {
+class ContactsViewController: UIViewController{
     @IBOutlet private weak var tableView: UITableView!
-    
+
     var contacts: Results<ContactData>! {
-        get{
-            return realm.objects(ContactData.self).sorted(byKeyPath: "firstnName" , ascending: true)
-        }
+        get{return realm.objects(ContactData.self).sorted(byKeyPath: "firstnName" , ascending: true)}
     }
+    
     let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: ContactsCell.reusID)
+        tableView.register(UINib(nibName: "ContactsCell", bundle: nil), forCellReuseIdentifier: NameCell.reusID.directionarySelection)
         navigation()
         print(Realm.Configuration.defaultConfiguration)
     }
@@ -40,7 +39,8 @@ class ContactsViewController: UIViewController {
         let newContactVC = UIStoryboard(name: "NewContactViewController", bundle: nil).instantiateViewController(withIdentifier: "NewContactViewController")
         self.navigationController?.pushViewController(newContactVC, animated: true)
     }
-
+    //Mark: - UITableViewDelegate and UITableViewDataSource
 
 }
+
 

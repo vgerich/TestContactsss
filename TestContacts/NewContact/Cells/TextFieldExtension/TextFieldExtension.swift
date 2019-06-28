@@ -8,54 +8,63 @@
 
 import UIKit
 
-var id = 0
-var photo = UIImage()
-var name = ""
-var secondName = ""
-var email = ""
-var workEmail = ""
-var date = ""
-var phone = ""
-var workPhone = ""
-var notes = ""
-var nameWork = ""
-var position = ""
 
 extension NewContactCell: UITextFieldDelegate{
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-            name = firstNameTextField.text!
-            secondName = secondNameTextField.text!
+        
+            Contact.shared.name = firstNameTextField.text!
+            Contact.shared.secondName = secondNameTextField.text!
+        
        return true
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return false
     }
+    
 }
 extension NewContactRepeatingCell: UITextFieldDelegate{
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        
         if firstRepeatingTextField.placeholder == "Number phone"{
-            phone = firstRepeatingTextField.text!
-            workPhone = secondRepeatingTextField.text!
+            Contact.shared.phone = firstRepeatingTextField.text!
+            Contact.shared.workPhone = secondRepeatingTextField.text!
+            
             return true
         }
+            
         else if firstRepeatingTextField.placeholder == "Email"{
-            email = firstRepeatingTextField.text!
-            workEmail = secondRepeatingTextField.text!
+            
+            Contact.shared.email = firstRepeatingTextField.text!
+            Contact.shared.workEmail = secondRepeatingTextField.text!
+            
             return true
+            
         }
         else if firstRepeatingTextField.placeholder == "Name company"{
-            nameWork = firstRepeatingTextField.text!
-            position = secondRepeatingTextField.text!
+            
+            Contact.shared.nameWork = firstRepeatingTextField.text!
+            Contact.shared.position = secondRepeatingTextField.text!
+            
             return true
+            
         }
+            
         else if firstRepeatingTextField.placeholder == "Choose date"{
-            date = firstRepeatingTextField.text!
-            notes = secondRepeatingTextField.text!
+            
+            Contact.shared.date = firstRepeatingTextField.text!
+            Contact.shared.notes = secondRepeatingTextField.text!
+            
             return true
+            
         }
         else {
+            
             return false
+            
         }
         
     }
